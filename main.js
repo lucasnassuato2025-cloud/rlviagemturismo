@@ -1,41 +1,20 @@
 const WA='5513982271412',TEL='tel:+551333266831';
-const HERO_PLANE="https://source.unsplash.com/5gyxM21otB4/2200x1400";
 const hero=document.querySelector('.hero');
 if(hero){
+  const plane='https://images.unsplash.com/photo-1529074963764-98f45c47344b?auto=format&fit=crop&w=2400&q=90';
   hero.style.position='relative';
+  hero.style.overflow='hidden';
   hero.style.minHeight='calc(100vh - 74px)';
   hero.style.display='flex';
   hero.style.alignItems='center';
-  hero.style.backgroundColor='#fff7f7';
-  hero.style.backgroundImage=`linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.93) 40%,rgba(255,255,255,.72) 66%,rgba(255,255,255,.42) 100%),url('${HERO_PLANE}')`;
-  hero.style.backgroundRepeat='no-repeat,no-repeat';
-  hero.style.backgroundPosition='center,right 5% center';
-  hero.style.backgroundSize='cover,contain';
+  hero.style.backgroundImage=`linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.88) 38%,rgba(255,255,255,.64) 66%,rgba(255,255,255,.35) 100%),url('${plane}')`;
+  hero.style.backgroundRepeat='no-repeat';
+  hero.style.backgroundPosition='center center';
+  hero.style.backgroundSize='cover';
 }
-function adjustHeroPlane(){
-  if(!hero)return;
-  if(window.innerWidth<700){
-    hero.style.minHeight='auto';
-    hero.style.backgroundImage=`linear-gradient(180deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.90) 52%,rgba(255,255,255,.84) 100%),url('${HERO_PLANE}')`;
-    hero.style.backgroundPosition='center,center top 16px';
-    hero.style.backgroundSize='cover,92% auto';
-  }else if(window.innerWidth<980){
-    hero.style.minHeight='auto';
-    hero.style.backgroundImage=`linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.88) 58%,rgba(255,255,255,.78) 100%),url('${HERO_PLANE}')`;
-    hero.style.backgroundPosition='center,center top 8px';
-    hero.style.backgroundSize='cover,82% auto';
-  }else{
-    hero.style.minHeight='calc(100vh - 74px)';
-    hero.style.backgroundImage=`linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.93) 40%,rgba(255,255,255,.72) 66%,rgba(255,255,255,.42) 100%),url('${HERO_PLANE}')`;
-    hero.style.backgroundPosition='center,right 5% center';
-    hero.style.backgroundSize='cover,contain';
-  }
-}
-adjustHeroPlane();
-window.addEventListener('resize',adjustHeroPlane);
 const heroCard=document.querySelector('.hero-card');
 if(heroCard){
-  heroCard.style.background='rgba(255,255,255,.88)';
+  heroCard.style.background='rgba(255,255,255,.86)';
   heroCard.style.backdropFilter='blur(10px)';
   heroCard.style.border='1px solid rgba(255,255,255,.72)';
   heroCard.style.boxShadow='0 28px 70px rgba(0,0,0,.14)';
