@@ -1,13 +1,7 @@
-Site corrigido pela Nassus Tecnologia.
+Site RL Viagens e Turismo corrigido.
 
-Arquivos principais:
-- index.html
-- pacotes.html
-- galeria.html
-- contato.html
-- styles.css
-- main.js
-
-Para publicar na Netlify/Vercel, use:
-Build command: vazio
-Publish directory: .
+Atualizações:
+- Logo horizontal no cabeçalho e no topo do rodapé.
+- Galeria com fotos reais em assets/galeria.
+- Botões CTA com identidade visual de WhatsApp e Instagram.
+- Página de contato profissional com avaliação Google 5,0 e 10 avaliações.
