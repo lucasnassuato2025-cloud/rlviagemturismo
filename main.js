@@ -1,7 +1,19 @@
-const heroPhotoStyle=document.createElement('style');
-heroPhotoStyle.textContent=`.hero-card{position:relative;isolation:isolate;background:linear-gradient(90deg,rgba(255,255,255,.94) 0%,rgba(255,255,255,.84) 42%,rgba(255,255,255,.58) 100%),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1200&q=85') center/cover no-repeat!important}.hero-card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(225,28,36,.10),rgba(255,255,255,.30));z-index:0;pointer-events:none}.hero-card>*{position:relative;z-index:1}.hc-route{background:rgba(255,255,255,.78)!important;backdrop-filter:blur(4px);box-shadow:0 10px 26px rgba(0,0,0,.06)}@media(max-width:620px){.hero-card{background:linear-gradient(180deg,rgba(255,255,255,.95),rgba(255,255,255,.73)),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=82') center/cover no-repeat!important}}`;
-document.head.appendChild(heroPhotoStyle);
 const WA='5513982271412',TEL='tel:+551333266831';
+const hero=document.querySelector('.hero');
+if(hero){
+  hero.style.position='relative';
+  hero.style.minHeight='calc(100vh - 74px)';
+  hero.style.display='flex';
+  hero.style.alignItems='center';
+  hero.style.background="linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.84),rgba(255,255,255,.42)),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=90') center right/cover no-repeat";
+}
+const heroCard=document.querySelector('.hero-card');
+if(heroCard){
+  heroCard.style.background='rgba(255,255,255,.84)';
+  heroCard.style.backdropFilter='blur(10px)';
+  heroCard.style.border='1px solid rgba(255,255,255,.72)';
+  heroCard.style.boxShadow='0 28px 70px rgba(0,0,0,.14)';
+}
 function openWA(msg){location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg||'Olá! Vim pelo site da RL Viagens.');}
 document.addEventListener('click',e=>{const wa=e.target.closest('[data-wa]');if(wa){e.preventDefault();openWA(wa.getAttribute('data-wa'));}});
 document.querySelectorAll('[data-tel]').forEach(a=>a.setAttribute('href',TEL));
