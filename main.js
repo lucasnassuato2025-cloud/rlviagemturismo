@@ -1,15 +1,40 @@
 const WA='5513982271412',TEL='tel:+551333266831';
+const HERO_PLANE="https://images.unsplash.com/photo-1614602535206-7d5100e065e0?auto=format&fit=crop&w=2400&q=90";
 const hero=document.querySelector('.hero');
 if(hero){
   hero.style.position='relative';
   hero.style.minHeight='calc(100vh - 74px)';
   hero.style.display='flex';
   hero.style.alignItems='center';
-  hero.style.background="linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.84),rgba(255,255,255,.42)),url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=90') center right/cover no-repeat";
+  hero.style.backgroundImage=`linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 44%,rgba(255,255,255,.68) 70%,rgba(255,255,255,.35) 100%),url('${HERO_PLANE}')`;
+  hero.style.backgroundRepeat='no-repeat,no-repeat';
+  hero.style.backgroundPosition='center,right 6% center';
+  hero.style.backgroundSize='cover,auto 86%';
 }
+function adjustHeroPlane(){
+  if(!hero)return;
+  if(window.innerWidth<700){
+    hero.style.minHeight='auto';
+    hero.style.backgroundImage=`linear-gradient(180deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.89) 58%,rgba(255,255,255,.80) 100%),url('${HERO_PLANE}')`;
+    hero.style.backgroundPosition='center,center top 18px';
+    hero.style.backgroundSize='cover,92% auto';
+  }else if(window.innerWidth<980){
+    hero.style.minHeight='auto';
+    hero.style.backgroundImage=`linear-gradient(180deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.86) 60%,rgba(255,255,255,.76) 100%),url('${HERO_PLANE}')`;
+    hero.style.backgroundPosition='center,center top 10px';
+    hero.style.backgroundSize='cover,78% auto';
+  }else{
+    hero.style.minHeight='calc(100vh - 74px)';
+    hero.style.backgroundImage=`linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.91) 44%,rgba(255,255,255,.68) 70%,rgba(255,255,255,.35) 100%),url('${HERO_PLANE}')`;
+    hero.style.backgroundPosition='center,right 6% center';
+    hero.style.backgroundSize='cover,auto 86%';
+  }
+}
+adjustHeroPlane();
+window.addEventListener('resize',adjustHeroPlane);
 const heroCard=document.querySelector('.hero-card');
 if(heroCard){
-  heroCard.style.background='rgba(255,255,255,.84)';
+  heroCard.style.background='rgba(255,255,255,.86)';
   heroCard.style.backdropFilter='blur(10px)';
   heroCard.style.border='1px solid rgba(255,255,255,.72)';
   heroCard.style.boxShadow='0 28px 70px rgba(0,0,0,.14)';
