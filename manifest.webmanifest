@@ -1,0 +1,11 @@
+{
+  "name": "RL Viagens e Turismo",
+  "short_name": "RL Viagens",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#E11C24",
+  "icons": [
+    {"src": "assets/logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
