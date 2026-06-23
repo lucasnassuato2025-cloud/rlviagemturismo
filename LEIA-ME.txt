@@ -1,0 +1,13 @@
+Site corrigido pela Nassus Tecnologia.
+
+Arquivos principais:
+- index.html
+- pacotes.html
+- galeria.html
+- contato.html
+- styles.css
+- main.js
+
+Para publicar na Netlify/Vercel, use:
+Build command: vazio
+Publish directory: .
