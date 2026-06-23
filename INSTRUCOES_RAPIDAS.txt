@@ -1,0 +1,10 @@
+ARQUIVO PREPARADO PARA CLAUDE / CLOUD
+
+1. Extraia este ZIP.
+2. Envie a pasta completa para o Claude.
+3. Cole o conteúdo do arquivo PROMPT_PARA_CLAUDE.txt.
+4. Peça para ele devolver um ZIP final corrigido.
+5. Depois suba o ZIP final no GitHub, Vercel ou Netlify.
+
+Observação:
+Este pacote mantém os arquivos do site e inclui o prompt pronto para melhoria completa.

@@ -1,0 +1,91 @@
+PROMPT PARA COLAR NO CLAUDE / CLOUD
+
+Você é um desenvolvedor front-end sênior, especialista em UI/UX, turismo, SEO local, performance mobile e sites com visual premium estilo tema WordPress profissional.
+
+Estou enviando um site estático HTML/CSS/JS da empresa "RL Viagens e Turismo". Quero que você atualize e corrija o site inteiro, deixando com aparência premium, moderna, compacta e profissional, sem quebrar nada que já existe.
+
+REGRAS OBRIGATÓRIAS:
+1. NÃO remova páginas existentes.
+2. NÃO remova a logo existente.
+3. NÃO remova a galeria real de fotos dos clientes.
+4. NÃO remova botões de WhatsApp, Instagram, Facebook e Google.
+5. NÃO quebre links internos entre index.html, pacotes.html, galeria.html e contato.html.
+6. NÃO use promessas falsas.
+7. NÃO deixe imagens quebradas.
+8. NÃO deixe o site pesado.
+9. NÃO dependa de frameworks complexos.
+10. Entregue tudo em HTML, CSS e JavaScript funcionando, pronto para subir no GitHub, Vercel ou Netlify.
+
+OBJETIVO VISUAL:
+Deixar o site com visual de agência de viagens premium, parecido com site profissional de WordPress premium:
+- Cabeçalho elegante, compacto e fixo.
+- Hero principal impactante, com foto real de avião inteiro ou viagem no fundo.
+- A imagem de avião precisa aparecer de verdade, não apenas asa e não apagada demais.
+- Texto do hero precisa continuar legível.
+- Cards com visual premium, bordas suaves, sombra elegante e espaçamento equilibrado.
+- Layout mais compacto, limpo e moderno.
+- Visual bonito em desktop, iPhone/iOS e Android.
+- Nada pode ficar cortado, torto ou desalinhado no celular.
+
+PÁGINAS:
+1. index.html
+   - Melhorar hero principal.
+   - Usar imagem real de avião inteiro ou viagem como elemento visual forte.
+   - Melhorar chamada para WhatsApp.
+   - Mostrar confiança, atendimento, parcelas, suporte e agência.
+   - Manter CTA para pacotes, galeria e contato.
+
+2. pacotes.html
+   - Corrigir imagens dos pacotes.
+   - Porto Seguro/Bahia precisa ter imagem funcionando.
+   - Cards de pacotes bonitos, compactos e premium.
+   - Botão de cotação via WhatsApp em cada pacote.
+   - Melhorar visual sem exagerar no tamanho da página.
+
+3. galeria.html
+   - Usar as fotos reais que já estão na pasta assets/galeria.
+   - Manter layout bonito e responsivo.
+   - Não deixar fotos estouradas ou cortadas de forma ruim.
+   - Pode melhorar lightbox/modal se for simples e sem quebrar.
+
+4. contato.html
+   - Deixar mais profissional.
+   - Melhorar blocos de WhatsApp, Instagram, Facebook, telefone, endereço e avaliação Google.
+   - Formulário deve mandar mensagem para WhatsApp com os dados preenchidos.
+   - Manter visual premium e confiável.
+
+SEO E PERFORMANCE:
+- Melhorar títulos, meta descriptions e Open Graph.
+- Manter HTML semântico.
+- Usar alt nas imagens.
+- Lazy loading nas imagens fora do hero.
+- CSS limpo e organizado.
+- JavaScript sem erro no console.
+- Manter rápido no mobile.
+- Não usar imagens gigantes sem otimização.
+- Se usar imagem externa, deixar fallback para não quebrar.
+
+RESPONSIVO:
+Testar mentalmente e corrigir:
+- Desktop 1920px
+- Notebook 1366px
+- Tablet
+- iPhone
+- Android
+
+BOTÕES:
+- WhatsApp com visual oficial verde e ícone.
+- Instagram com visual oficial em degradê e ícone.
+- CTAs claros e clicáveis.
+- O botão flutuante do WhatsApp deve funcionar.
+
+ENTREGA:
+Depois de corrigir:
+1. Entregue o projeto completo em ZIP.
+2. Informe quais arquivos foram alterados.
+3. Informe o que foi melhorado.
+4. Garanta que o site abre localmente clicando em index.html.
+5. Garanta que o site pode ser enviado para GitHub/Vercel/Netlify sem ajustes adicionais.
+
+IMPORTANTE:
+Quero qualidade final, visual premium e profissional. Não faça só ajuste pequeno. Refatore o necessário, mas sem quebrar o que já funciona.
